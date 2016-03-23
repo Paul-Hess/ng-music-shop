@@ -12,11 +12,7 @@ export class ArtistPipe implements PipeTransform {
 
 
     return input.filter((album) => {
-      return album.artist.toLowerCase().indexOf(desiredArtist) !== -1;
+      return album.code.toLowerCase().indexOf(desiredArtist) !== -1;
     });
-  }
-
-  filter(string1: string, string2: string){
-    return string1 === string2;
   }
 }
